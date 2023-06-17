@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:200,300,400,400i,700"); 
+@import url('https://fonts.googleapis.com/css?family=Garamond:400,400i,700');
+
+html, body
+{
+    height: 100%; 
+    text-align: justify;
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+
+body
+{
+    margin: 0;
+    font-family:'Lato',sans-serif
+    
+}
+
+  ::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: rgb(6, 102, 140,0.7);
+}
+
+::selection {
+  color: white;
+  background: rgb(6, 102, 140,0.7);
+}
+
+a {
+  color:#679436;
+  text-decoration: none;
+  transition:0.3s;
+  display:inline-block;
+  position:relative;
+}
+
+  a:hover{
+      color:#425f22;
+      transition:0.3s;
+  }
+
+  a:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+  }
+
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255,0), #ebfaee97, #ebfaee 95%)
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.slogan {
+  font-size: 7vw;
+  font-family: 'Arial Black';
+  padding-top: 10%;
+  text-align: center;
+  margin:10%;
+}
